@@ -6,8 +6,8 @@ require '../vendor/autoload.php';
 
 const US_COUNTRY_CODE = 'US';
 
-$service_plan_id = "c0a614be6fc94ff298581792da3a7c8b";
-$bearer_token = "173f27ae3f9b4ba68e8d475006d8ebb1";
+$servicePlanId = "c0a614be6fc94ff298581792da3a7c8b";
+$bearerToken = "173f27ae3f9b4ba68e8d475006d8ebb1";
 
 //Any phone number assigned to your API
 $sendFrom = "447520651179";
@@ -33,10 +33,10 @@ if ($isValid):
 
     $data = json_encode($content);
 
-    $ch = curl_init("https://us.sms.api.sinch.com/xms/v1/{$service_plan_id}/batches");
+    $ch = curl_init("https://us.sms.api.sinch.com/xms/v1/{$servicePlanId}/batches");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BEARER);
-    curl_setopt($ch, CURLOPT_XOAUTH2_BEARER, $bearer_token);
+    curl_setopt($ch, CURLOPT_XOAUTH2_BEARER, $bearerToken);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
