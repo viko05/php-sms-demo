@@ -6,6 +6,7 @@ A simple example of php implementation for [Sinch sms api](https://developers.si
 
 - clone this project
 - ``cd project-folder``
+- switch to working branch ``git checkout FEAT-setup-simple-php-sms-client``
 - ``docker-compose up -d``
 - install dependencies ``docker exec -it demo-php-fpm composer install``
 - run in your browser http://localhost:8000/index.php
