@@ -1,6 +1,10 @@
 # php sms client demo
 
-A simple example of php implementation for [Sinch sms api](https://developers.sinch.com/docs/sms/)
+## Sinch
+A simple example of php implementation for [Sinch sms api](https://developers.sinch.com/docs/sms/). See ``app/public/send-sinch.php``
+
+## Twilio
+The example of usage [Twilio API](https://www.twilio.com/docs/sms/api/message-resource#create-a-message-resource) can be found here ``app/public/send-twilio.php``
 
 ## How to try
 
@@ -18,12 +22,6 @@ example of API response if the number isn't added to verified list.
 OR
 
 Sign up for your own account and replace the values in [app/send.php](https://github.com/viko05/php-sms-demo/blob/FEAT-setup-simple-php-sms-client/app/public/send.php)
-with correct credentials.
-```
-$servicePlanId
-$bearerToken
-$sendFrom
-```
+with correct credentials from your account.
 
-**WARN**: Don't put your credentials hadcoded. Always use secure secret storages of ``.env`` files out of your version control 
-and unreachable from the web. This project is only for demo purposes.
+NOTE all API credentials must be set up in ``.env`` file
