@@ -11,8 +11,8 @@ A simple example of php implementation for [Sinch sms api](https://developers.si
 - install dependencies ``docker exec -it demo-php-fpm composer install``
 - run in your browser http://localhost:8000/index.php
 
-NOTE: ask me if you need to add your number to the verified list for **test sending**. For not verified numbers. See the
-example of API response if the number isn't added to verified list. Or use
+NOTE: ask me if you need to add your number to the verified list for **test sending**. See the
+example of API response if the number isn't added to verified list.
 {"code":"only_to_verified_numbers_in_test","text":"Messages can only be sent to your verified number in test mode"}
 
 OR
