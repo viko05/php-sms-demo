@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <form class="form-horizontal" method="post" action="send.php">
+            <form class="form-horizontal" method="post" action="send-twillio.php">
                 <div class="form-group">
                     <label for="personName" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10">
