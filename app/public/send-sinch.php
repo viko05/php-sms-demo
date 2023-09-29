@@ -1,13 +1,17 @@
 <?php
 
 use libphonenumber\PhoneNumberUtil;
+use Symfony\Component\Dotenv\Dotenv;
 
 require '../vendor/autoload.php';
 
 const US_COUNTRY_CODE = 'US';
 
-$servicePlanId = "c0a614be6fc94ff298581792da3a7c8b";
-$bearerToken = "173f27ae3f9b4ba68e8d475006d8ebb1";
+// Load env file
+$env = (new Dotenv())->usePutenv();
+$env->loadEnv(__DIR__.'/../.env');
+$servicePlanId = getenv('SINCH_SERVICE_PLAN_ID');
+$bearerToken = getenv('SINCH_BEARER_TOKEN');
 
 //Any phone number assigned to your API
 $sendFrom = "447520651179";
